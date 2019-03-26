@@ -579,7 +579,7 @@ def replaceequations(b, f):
 
             if wl:
                 b = b[:m.start()] + \
-                    '{{\n<div class="eqwl"><img class="eqwl" src="%s" alt="%s" />\n<br /></div>}}' % (
+                    '{{\n<div class="eqwl"><img class="eqwl" src="%s" alt="%s" />\n<br></div>}}' % (
                         fullfn, eqtext) + b[m.end():]
             else:
                 b = b[:m.start()] + \
@@ -756,7 +756,7 @@ def br(b, f, tableblock=False):
 
     # Deal with line break.
     r = re.compile(r"(?<!\\)\\n", re.M + re.S)
-    b = re.sub(r, r'<br />', b)
+    b = re.sub(r, r'<br>', b)
 
     # Deal with paragraph break. Caution! Should only use when we're already in
     # a paragraph.
@@ -1176,11 +1176,11 @@ def codeblock(f, g):
                 else:
                     for x in (':', '.', '-'):
                         if str(l).lstrip().startswith(x):
-                            out(f.outf, '<br />' + prependnbsps(l))
+                            out(f.outf, '<br>' + prependnbsps(l))
                             break
                     else:
                         if str(l).lstrip().startswith('='):
-                            out(f.outf, prependnbsps(l) + '<br />')
+                            out(f.outf, prependnbsps(l) + '<br>')
                         else:
                             out(f.outf, l)
             else:
@@ -1354,7 +1354,7 @@ def procfile(f):
     if pc(f) == '=':  # don't check exact number f.outf '=' here jem.
         t = br(nl(f), f)[:-1]
         if title is None:
-            title = re.sub(' *(<br />)|(&nbsp;) *', ' ', t)
+            title = re.sub(' *(<br>)|(&nbsp;) *', ' ', t)
     else:
         t = None
 

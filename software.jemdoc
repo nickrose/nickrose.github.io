@@ -1,9 +1,9 @@
 # jemdoc: menu{MENU}{software.html},showsource = Software,addcss{jemdoc.css}
 \n
-= Software 
-The following software programs were developed when I was at Paderborn Universitaet. 
+= Software
+The following software programs were developed when I was at Paderborn Universitaet.
 
-== Model-Order Selection 
+== Model-Order Selection
 - [https://github.com/nickrose/ICtoolbox Model-order selection for high-dimensional, low-sample support correlated data]
 
 #== Multi-modal regression
@@ -13,8 +13,8 @@ The following software programs were developed when I was at Paderborn Universit
 #- [cfm.html Convex Factorization Machine for Regression]
 
 #== Density ratio estimation methods
-#- [RuLSIF.html Relative uLSIF (RuLSIF)] 
-#- [gmkliep.html Gaussian Mixture KLIEP (GM-KLIEP)] 
+#- [RuLSIF.html Relative uLSIF (RuLSIF)]
+#- [gmkliep.html Gaussian Mixture KLIEP (GM-KLIEP)]
 #- [http://www.ms.k.u-tokyo.ac.jp/software.html\#LHSS Least-squres Hetero-distributional Subspace Search (LHSS)]
 #- See also Prof. Sugiyama's [http://www.ms.k.u-tokyo.ac.jp/software.html webpage]
 
@@ -28,5 +28,5 @@ The following software programs were developed when I was at Paderborn Universit
 #- [http://www.ms.k.u-tokyo.ac.jp/software.html\#LSPC Least-Squares Probabilistic Classifier (LSPC)] (Classification)
 #- [iwklr.html Importance Weighted Kernel Logistic Regression (IWKLR)] (Classification)
 
-#== Some useful tools 
-#- [software/kde.zip Multivariate Kernel Density Estimation for dummies (Matlab)] 
+#== Some useful tools
+#- [software/kde.zip Multivariate Kernel Density Estimation for dummies (Matlab)]
