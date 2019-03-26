@@ -1,0 +1,37 @@
+# jemdoc: menu{MENU}{index.html},showsource = Nick Roseveare,addcss{jemdoc.css}
+\n
+= Statistical Signal Processing and Machine Learning 
+
+I focus on development and application of statistical signal processing and machine learning algorithms for a variety of applications. In particular, I am interested in theoretical under-pinning and hidden behvaiors of ML algorithms and what can be understood better about them in terms of classical statistics.
+ 
+
+#~~~
+#{}{img_left}{makoto.jpg}{Makoto Yamada}{225px}{225px}
+#*Nicholas Roseveare, Ph.D.*\n
+#Research Scientist, 
+# High-dimensional Statistical Modeling, [https://www.researchgate.net/profile/Yang_Song46/publication/282867213_Determining_the_number_of_correlated_signals_between_two_data_sets_using_PCA-CCA_when_sample_support_is_extremely_small/links/5785a98c08ae3949cf539111/Determining-the-number-of-correlated-signals-between-two-data-sets-using-PCA-CCA-when-sample-support-is-extremely-small.pdf e.g., model-order selection]\n 
+#\n\n
+
+
+#Tel: \+1-\n
+#E-mail: $\textnormal{@}$
+#~~~
+
+
+== Interests and Philosophy of Research 
+I am always attempting to abide by the following life (and career) principles:
+• *Learning*: I am always trying to become a better engineer and researcher. I am always absorbing lessons from my own and others’ experience, as well as reading and keeping up with trends in my field. I also very much enjoy the teaching process, it is gratifying to help other come to an understanding of a topic and to strengthen and question my own knowledge of the field.\n
+• *Leadership*: I enjoy and work at understanding the big picture in order to stay on target and
+to help others do the same. I try to be intentional and to take ownership of my deliverables. I also recognize that sometimes others are more suited to a particular task. A good leader creates environments and teams that don’t need them.\n
+• *Teamwork*: Excellent research and products require teamwork, collaboration, and respect for one another. Being right is feels nice, but it always comes in second-place behind what is good for the project and the team.\n
+• *Hard Work*: A successful project is always the result of much striving and frustration. I push hard on a project and catalog all paths until a solution is found. I find the learning along the way and the hard-won results to be rewarding twin goals.\n
+
+My technical strengths include:\n
+• *Algorithm development*, including initial prototyping from research papers, progressive
+improvements and novels approaches, all the way through practical implementation and infrastructure choices (database, message-queues, containerization, etc.).
+• *Statistical signal processing*, where I have worked on several challenging problems in tracking and filtering, time-series smoothing, phase reconstruction, high-dimensional model-order selection, etc.
+• *Optimization*, where I have worked on a variety of convex-relaxations of NP-hard problems (TSP, cost assignment, constrained resource allocation, etc.).
+• *Machine learning*, with experience in anomaly detection, natural language processing, and computer vision utilizing a variety of existing and in-house developed solutions including ensemble methods, deep-learning, and high-dimensional correlation analysis.
+
+Resume [https://drive.google.com/file/d/0BxQq5Bz3hlXXNzR0SW9ISUVad2s/view here]
+

@@ -1,0 +1,12 @@
+# jemdoc: menu{MENU}{conference.html},showsource = Software,addcss{jemdoc.css}
+\n
+= Conference List
+== Machine Learning
+- [http://nips.cc/ Neural Information Processing Systems (NIPS)]
+- [http://www.icml-2011.org/ International Conference on Machine Learning (ICML)]
+- [http://www.aistats.org/ International Conference on Artificial Intelligence and Statistics (AISTATS)]
+- [http://www.aaai.org/home.html Association for the Advancement of Artificial Intelligenc (AAAI)]
+  
+== Signal & Speech Processing
+- [http://www.icassp2011.com/en/welcome International Conference on Acoustics, Speech and Signal Processing (ICASSP)]
+
