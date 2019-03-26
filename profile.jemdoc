@@ -1,14 +1,13 @@
 # jemdoc: menu{MENU}{index.html},showsource = Nick Roseveare,addcss{jemdoc.css}
-
-== Nick Roseveare, Ph.D.
+\n
+= Profile
 ~~~
-#{}{img_left}{images/nick.jpg}{Nick Roseveare}{225px}{225px}
-*Nick Roseveare, Ph.D.*\n
+#{}{img_left}{images/nick.jpg}{Nick Roseveare}{190px}{256px}
+*Nick Roseveare, Ph.D.*, [./bio.html bio]\n
 Senior Research Scientist, [http://formulusblack.com Formulus Black]\n
-\n\n
-
-#Tel: \+1-\n
+Tel: [tel:+19705991732 \+1-970-599-1732]\n
 #E-mail: $\textnormal{@}$
+Complete résumé [https://drive.google.com/file/d/0BxQq5Bz3hlXXNzR0SW9ISUVad2s/view here].\n
 ~~~
 
 == Education
@@ -16,10 +15,12 @@ Ph.D., Electrical Engineering, [http://www.ksu.edu/ Kansas State University], 20
 M.S., Electrical Engineering, [http://www.colostate.edu/ Colorado State University], 2007\n
 B.S., Electrical Engineering, Colorado State University, May 2005
 
-== Work Experience
+== Academic Experience
+Postdoctoral Researcher, [http://sst.uni-paderborn.de/ Paderborn Universitaet] (Sep. 2013 - Sep. 2014) \n
+
+== Industry Experience
 Senior Data Scientist, Alchemy IoT (Feb. 2016 - Aug. 2018)\n
 Signal Processing Research Engineer, [http://signal-analysis.com Innovative Signal Analysis, Inc.] (Nov. 2014 - Feb. 2016)\n
-Postdoctoral Researcher, [http://sst.uni-paderborn.de/ Paderborn Universitaet] (Sep. 2013 - Sep. 2014) \n
 Research Scientist,[http://www.numerica.us/ Numerica Corp.] (Oct. 2007 - Jul. 2009) \n
 
 == Professional Affiliations and Activities
@@ -29,4 +30,10 @@ Tau Beta Pi and Eta Kappa Nu Honor Societies
 
 == Awards
 Outstanding Teaching Assistant, Kansas State University, Dept. ECE, 2011 \n
-Student Travel Grant, WCNC 2011 \n
+Student Travel Grant, IEEE WCNC, 2011 \n
+Myron Brown Ludlow and Fry Family Scholarships, Colorado State University, 2003-2005\n
+== Accounts
+[http://www.linkedin.com/in/nickroseveare LinkedIn]\n
+[http://www.researchgate.net/profile/Nicholas_Roseveare Research Gate]\n
+[https://www.kaggle.com/nickrose Kaggle]\n
+[https://www.github.com/nickrose GitHub]

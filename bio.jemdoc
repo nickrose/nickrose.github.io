@@ -1,0 +1,34 @@
+# jemdoc: menu{MENU}{index.html},showsource = Nick Roseveare,addcss{jemdoc.css}
+\n
+[./profile.html Nick Roseveare, Phd]\n
+
+== Brief Biography
+
+Nick attended Colorado State University where he received his Bachelors degree
+(2005, summa cum laude) in electrical engineering and subsequently obtained
+his Masters (2007) in the same and focused on signal processing. He worked
+at Numerica Corp. from 2007 to 2009 on algorithms for track decorrelation
+and ambibuity assessment in data association, and on stochastic modeling;
+working at Numerica again in 2013 on the resolution of tracking ambiguity
+through use of Dempster-Shafer theory and Smets' transferable belief model
+for class identification, as well as for class uncertainty quantification
+and sensor reliability modeling.\n
+\n
+In 2013 he obtained his Phd in electrical engineering from Kansas State
+University. \n
+\n
+From 2013 to 2014 he lectured on signal processing and control theory at
+Universität Paderborn (Germany) and researched low-sample-support methods
+for correlation analysis of high dimensional data sets. He was employed at
+ISA from 2014 to 2017 and worked on tracking, optimization, and statistical
+signal processing algorithms. From winter 2017 to Summer 2018 he worked
+on anomaly detection and machine learning algorithms as a Senior Data and
+Algorithms Scientist at Alchemy IoT. Current, he is a senior research
+scientist work for Formulus Black on algorithm improvement and integrating
+machine learning into the operational algorithms related to data redundancy
+reduction, cluster server load balancing, and various other benchmarking and
+algorithmic experiments towards improved system performance.
+\n
+
+His work and research-related interests include statistical signal processing,
+machine learning, and optimization.

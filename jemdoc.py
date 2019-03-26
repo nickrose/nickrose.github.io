@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 """jemdoc version 0.7.3, 2012-11-27."""
 from __future__ import print_function
 # Copyright (C) 2007-2012 Jacob Mattingley (jacobm@stanford.edu).
@@ -1583,14 +1583,16 @@ def procfile(f):
         f.outf.close()
 
 
-def main():
-    if len(sys.argv) == 1 or sys.argv[1] in ('--help', '-h'):
+def main(arg=None):
+    if arg is None:
+        arg = sys.argv
+    if len(arg) == 1 or arg[1] in ('--help', '-h'):
         showhelp()
         raise SystemExit
-    if sys.argv[1] == '--show-config':
+    if arg[1] == '--show-config':
         print(standardconf())
         raise SystemExit
-    if sys.argv[1] == '--version':
+    if arg[1] == '--version':
         info()
         raise SystemExit
 
@@ -1598,30 +1600,30 @@ def main():
     confoverride = False
     outname = None
     confnames = []
-    for i in range(1, len(sys.argv), 2):
-        if sys.argv[i] == '-o':
+    for i in range(1, len(arg), 2):
+        if arg[i] == '-o':
             if outoverride:
                 raise RuntimeError("only one output file / directory, please")
-            outname = sys.argv[i + 1]
+            outname = arg[i + 1]
             outoverride = True
-        elif sys.argv[i] == '-c':
+        elif arg[i] == '-c':
             if confoverride:
                 raise RuntimeError("only one config file, please")
-            confnames.append(sys.argv[i + 1])
+            confnames.append(arg[i + 1])
             confoverride = True
-        elif sys.argv[i].startswith('-'):
+        elif arg[i].startswith('-'):
             raise RuntimeError(
-                'unrecognised argument %s, try --help' % sys.argv[i])
+                'unrecognised argument %s, try --help' % arg[i])
         else:
             break
 
     conf = parseconf(confnames)
 
     innames = []
-    for j in range(i, len(sys.argv)):
+    for j in range(i, len(arg)):
         # First, if not a file and no dot, try opening .jemdoc. Otherwise, fall back
         # to just doing exactly as asked.
-        inname = sys.argv[j]
+        inname = arg[j]
         if not os.path.isfile(inname) and '.' not in inname:
             inname += '.jemdoc'
 
