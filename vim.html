@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="profile.html">Profile</a></div>
+<div class="menu-item"><a href="publication.html">Publications</a></div>
+<div class="menu-item"><a href="software.html" class="current">Software</a></div>
+</td>
+<td id="layout-content">
+<p><br></p>
+<h1>vim:essentials</h1>
+<p>Rather than just another list of things you <i>can</i> do in <a href="http://www.vim.org/">vim</a>, these are things I use constantly&#8201;&mdash;&#8201;they've stood
+the test of time and really improve my efficiency. Try some of these things!
+If you think I should remove anything or if you have other
+comments, please <a href="./profile">let me know</a>. Also try
+<a href="http://www.vim.org/htmldoc/usr_01.html#tutor">vimtutor</a>, especially in your
+early vim days.</p>
+<h2>Indispensable</h2>
+<ul>
+<li><p><tt>.</tt> repeats the previous command.</p>
+</li>
+<li><p><tt>~</tt> toggles the case of the character under the cursor.</p>
+</li>
+<li><p><tt>ctrl+n</tt> completes half-typed words. Move forwards and backwards through the
+choices with <tt>ctrl+n</tt> and <tt>ctrl+p</tt>.</p>
+</li>
+<li><p><tt>ctrl+x</tt> then <tt>l</tt> or <tt>f</tt> completes entire lines or filenames.</p>
+</li>
+<li><p><tt>J</tt> joins two lines.</p>
+</li>
+</ul>
+<h2>Editing</h2>
+<ul>
+<li><p><tt>i</tt>, <tt>a</tt>, <tt>I</tt> and <tt>A</tt> start insert mode before the cursor, after the cursor,
+at the start of a line or at the end of a line.</p>
+</li>
+<li><p>Combine movement, deletion and insertion by <i>changing</i> text. (Replace <tt>c</tt> with
+<tt>d</tt> or <tt>y</tt> in any of these examples to delete or yank instead of change.)</p>
+<ul>
+<li><p><tt>cw</tt> changes until the end of a word (by deleting, then placing you in
+insert mode).</p>
+</li>
+<li><p><tt>c$</tt> changes until the end of a line.</p>
+</li>
+<li><p><tt>cl</tt> changes the character under the cursor.</p>
+</li>
+<li><p><tt>ct+</tt> changes until the next <tt>+</tt> (replace <tt>+</tt> with any character).</p>
+</li>
+<li><p><tt>ciw</tt>, <tt>ci(</tt> and <tt>ci[</tt> change inside a word, a <tt>()</tt> block or a <tt>[]</tt>
+block. Replace <tt>i</tt> with <tt>a</tt> to include the space around a word or the
+brackets themselves. Example: change a whole parenthetical expression by
+moving inside it and <tt>ci(</tt>.</p>
+</li></ul>
+</li>
+<li><p>Use numeric arguments (with almost any command!).</p>
+<ul>
+<li><p><tt>d5d</tt> deletes five lines.</p>
+</li>
+<li><p><tt>d3t)</tt> changes until the third <tt>)</tt>.</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<h2>Movement</h2>
+<ul>
+<li><p>Get comfortable with <tt>h</tt>, <tt>j</tt>, <tt>k</tt> and <tt>l</tt> instead of the arrow keys. They
+keep your fingers ready for many useful commands.</p>
+</li>
+<li><p>Reduce repetitive movement.</p>
+<ul>
+<li><p><tt>w</tt> and <tt>b</tt> move backwards or forwards one word.</p>
+</li>
+<li><p><tt>^</tt> and <tt>$</tt> move to the start or end of a line.</p>
+</li>
+<li><p><tt>H</tt>, <tt>M</tt> and <tt>L</tt> move to the top, middle or bottom of the screen.</p>
+</li>
+<li><p><tt>gg</tt> and <tt>G</tt> go to the start or end of a file.</p>
+</li>
+<li><p>Perform small searches to move to new locations (eg <tt>/jandal</tt> to move to
+the word <tt>jandal</tt>).</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<h2>Yanking and pasting</h2>
+<p>Move text by cutting (deleting) or copying (yanking), then
+pasting it elsewhere. Delete with <tt>d</tt>, yank with <tt>y</tt> and paste before or
+after the cursor with <tt>p</tt> or <tt>P</tt>.</p>
+<ul>
+<li><p>Copy the remainder of a line with <tt>y$</tt>. Paste it somewhere else with <tt>p</tt>.</p>
+</li>
+<li><p><tt>dd</tt> and <tt>Y</tt> delete or yank the current line.</p>
+</li>
+<li><p>Use <tt>V</tt> to enter visual line mode. Select several lines. Yank them with <tt>y</tt>.</p>
+</li>
+</ul>
+<h2>Jumping around</h2>
+<ul>
+<li><p><tt>*</tt> and <tt>#</tt> search forwards or backwards for the word under the cursor.</p>
+</li>
+<li><p><tt>ctrl+o</tt> restores the cursor position before the last jump.</p>
+</li>
+<li><p><tt>g;</tt> and <tt>g,</tt> step backwards or forwards through previous change locations.</p>
+</li>
+</ul>
+<h2>Visual block mode</h2>
+<p>Use <tt>ctrl+v</tt> to enter visual block mode to select a rectangular block of text.</p>
+<ul>
+<li><p>Remove comment markers from a set of lines. Go to the start of the line with
+<tt>^</tt>, enter visual block mode with <tt>ctrl+v</tt> and select the comment markers.
+Hit <tt>x</tt> and they're all gone.</p>
+</li>
+<li><p>Insert comment markers for multiple lines. Go to the start of the line
+with <tt>^</tt>, press <tt>ctrl+v</tt>, select a column of text at the start of the lines
+(eg with <tt>j</tt>) and hit <tt>I</tt>. Type the comment marker for one line and press
+<tt>escape</tt>, and the comment marker will appear on every line.</p>
+</li>
+</ul>
+<h2>Miscellaneous</h2>
+<ul>
+<li><p><tt>xp</tt> swaps two transposed characters.</p>
+</li>
+<li><p><tt>ctrl+a</tt> and <tt>ctrl+x</tt> increment or decrement the next number on the line.
+<tt>5ctrl+a</tt> adds five.</p>
+</li>
+<li><p><tt>=</tt> re-indents text.</p>
+</li>
+<li><p><tt>gq</tt> re-flows text. Example: set the maximum line width with
+<tt>:set tw=80</tt>, select some lines with <tt>V</tt> and type <tt>gq</tt>.</p>
+</li>
+<li><p><tt>:set hls!</tt> toggles search highlighting.</p>
+</li>
+<li><p><tt>:!rm filename</tt> runs the external command <tt>rm filename</tt>.</p>
+</li>
+</ul>
+<h2>Remaps</h2>
+<p>Try these lines in your <tt>vimrc</tt> file (see <tt>:help .vimrc</tt>).</p>
+<ul>
+<li><p><tt>nmap &lt;space&gt; i_&lt;esc&gt;r</tt> makes <tt>space</tt> let you insert a single character.</p>
+</li>
+<li><p><tt>nmap K i&lt;cr&gt;&lt;esc&gt;k$</tt> makes <tt>K</tt> split lines (the opposite of <tt>J</tt>).</p>
+</li>
+<li><p><tt>nmap s :w &lt;enter&gt;</tt> makes <tt>s</tt> save.</p>
+</li>
+<li><p><tt>nmap Q :q &lt;enter&gt;</tt> makes <tt>Q</tt> quit.</p>
+</li>
+</ul>
+<h2>Other great stuff</h2>
+<p>Ordered top picks: tabs, recording, marks, undo-branches, options, modelines,
+tags. Use the excellent <tt>:help</tt> to learn more&#8201;&mdash;&#8201;inside help, follow tags
+with <tt>ctrl+]</tt> and return with <tt>ctrl+o</tt>.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-03-27 16:49:53 MDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+(<a href="vim.jemdoc">source</a>)
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
