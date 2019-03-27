@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU}{software.html},showsource = Software,addcss{jemdoc.css}
 \n
 = Software
-The following software programs were developed when I was at Paderborn Universitaet.
+The following software programs were utilized or developed mostly while at university and during post-doctoral research.
 
 == Model-Order Selection
 - [https://github.com/nickrose/ICtoolbox Model-order selection for high-dimensional, low-sample support correlated data]
@@ -28,5 +28,22 @@ The following software programs were developed when I was at Paderborn Universit
 #- [http://www.ms.k.u-tokyo.ac.jp/software.html\#LSPC Least-Squares Probabilistic Classifier (LSPC)] (Classification)
 #- [iwklr.html Importance Weighted Kernel Logistic Regression (IWKLR)] (Classification)
 
-#== Some useful tools
+== Some tools
 #- [software/kde.zip Multivariate Kernel Density Estimation for dummies (Matlab)]
+- [http://www.lce.hut.fi/research/mm/ekfukf/ EKF/UKF Kalman filtering toolbox]\n
+Matlab filtering toolbox, visualization, and various dynamic models. by Simo Särkkä, and Jouni Hartikainen.
+- [http://cvxr.com/cvx/download/ CVX toolbox]\n
+Disciplined Convex Optimization. By Michael Grant and Stephen Boyd.
+- [https://github.com/cjlin1/libsvm/tree/master/ SVM toolbox]\n
+ Support vector machine implementation in C, Python, and Matlab. By Chih-Jin Lin.
+#- [http://github.com/nickrose/ICtoolbox/ IC toolbox]\n
+#(gitHub) Matlab Information Criterion toolbox for real and complex datasets. By yours truly.
+- [http://github.com/nickrose/MISTWF-toolkit-simulation MISTWF toolbox]
+(gitHub) Matlab minimum increment space-time water filing algorithm and test bed. By yours truly.
+
+== Miscellanea
+- [https://github.com/nickrose/tsp_algo TSP solver comparison]
+
+== Shortcut References
+- [https://sites.google.com/site/nicholasjroseveare/resources/vim Essential shortcuts for VIM]
+- [https://drive.google.com/file/d/0BxQq5Bz3hlXXc19LZnZmdzllQXM/view?usp=sharing An Introduction to LaTeX Typesetting]
