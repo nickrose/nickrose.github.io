@@ -38,12 +38,13 @@ Disciplined Convex Optimization. By Michael Grant and Stephen Boyd.
  Support vector machine implementation in C, Python, and Matlab. By Chih-Jin Lin.
 #- [http://github.com/nickrose/ICtoolbox/ IC toolbox]\n
 #(gitHub) Matlab Information Criterion toolbox for real and complex datasets. By yours truly.
-- [http://github.com/nickrose/MISTWF-toolkit-simulation MISTWF toolbox]
+- [http://github.com/nickrose/MISTWF-toolkit-simulation MISTWF toolbox]\n
 (gitHub) Matlab minimum increment space-time water filing algorithm and test bed. By yours truly.
 
 == Miscellanea
 - [https://github.com/nickrose/tsp_algo TSP solver comparison]
+- [https://drive.google.com/file/d/0BxQq5Bz3hlXXc19LZnZmdzllQXM/view?usp=sharing An Introduction to LaTeX Typesetting]
 
 == Shortcut References
 - [https://sites.google.com/site/nicholasjroseveare/resources/vim Essential shortcuts for VIM]
-- [https://drive.google.com/file/d/0BxQq5Bz3hlXXc19LZnZmdzllQXM/view?usp=sharing An Introduction to LaTeX Typesetting]
+- [http://aperiodic.net/screen/quick_reference Screen shortcuts]

@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{index.html},showsource = Nick Roseveare,addcss{jemdoc.css}
+# jemdoc: menu{MENU}{profile.html},showsource = Nick Roseveare,addcss{jemdoc.css}
 \n
 = Profile
 ~~~
@@ -21,7 +21,7 @@ Postdoctoral Researcher, [http://sst.uni-paderborn.de/ Paderborn Universitaet] (
 == Industry Experience
 Senior Data Scientist, Alchemy IoT (Feb. 2016 - Aug. 2018)\n
 Signal Processing Research Engineer, [http://signal-analysis.com Innovative Signal Analysis, Inc.] (Nov. 2014 - Feb. 2016)\n
-Research Scientist,[http://www.numerica.us/ Numerica Corp.] (Oct. 2007 - Jul. 2009) \n
+Research Scientist, [http://www.numerica.us/ Numerica Corp.] (Oct. 2007 - Jul. 2009) \n
 
 == Professional Affiliations and Activities
 Senior Member, IEEE \n
