@@ -56,12 +56,6 @@ cache_dir = './cache_results/'
 use_torrequest = False
 tor_pw = None
 
-req_headers = {'Cookie': """SIDCC=AN0-TYuj0q-4XRiXQ3gJMz0m3tlfWP7QSEH3wVYQlp_ilFIMpNsb9QuMYvgCPd-jZ1Wxi0GNmhc-; NID=180=yyWFo_ahytXboAQC5yQZtNAuiEO4gqC24ZuBpZohz3pAommWZJfkTvBN88PMtw7W-NCrgNkrTWiYz60sex47SYBzLc9quod8SE3qJNT0brAZO-rS6Obo-xKNozk9ru5gbnpHk6JAz2hBSvE2dZ5pvsNNH07LTOzNlvKVwAUqB_DunGUsFGiVU4llMIdTot7E_w54QhCB1SK2B61mnNOTpsd1vKKl55_08QVLATkzmiTWMAS3iMSbFfEIh15au_d6oph3ty5jzwb9N9IsAY74SuROjXSEAAO4uucw_4DzAbOVrYkZuXV5danfJ-3NlXRHXTLxaQV0h8l4397Po16rNS2fFOgLGb98e8is24rHDHYdVgX8e_hRFblgl_vhUlcFjX9qaFYhDUSo5TBayZzXZ5Kx10Z_nXsg_Q-dU8OYGL5iF4x2; ANID=AHWqTUlo-5w2MofmeFT-rWs1HL7b3GPMp25mAiCc0y4fjfdp1RfBaUXbueRQslOc; APISID=ie-xK6XHggw2c8MI/AM6-7GdnzbbCMiumm; HSID=AIubFez_pc8L7TxNM; SAPISID=6ipzySGnJYFpDf6t/AK-d6VdxEfTRbjHbq; SID=DwdoFrkf3ur8nomaNkXVgSyDgVgk3oCCjH7X5twmfTOq8s8k6yqehrv3fErhhMqx0Z0r3w.; SSID=Ay-xrtBerlXX0LgH-; GSP=LM=1541629109:S=qOkGE7yk0SrAQOMa; 1P_JAR=2019-3-28-18""",
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-    'Accept-Encoding': 'br, gzip, deflate',
-    'Host': 'scholar.google.com',
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15',
-    'Accept-Language': 'en-us', 'DNT': '1'}
 default_pub_url = (f'{scholar_base_url}/citations?user='
     f'{defaultUserToken}&view_op=list_works&sortby=pubdate')
 missing_year_override = {
@@ -125,14 +119,14 @@ def tor_newip_get(url, pw=tor_pw, debug=0):
                     with TorRequest(password=pw) as tr:
                         tr.reset_identity()
                         if debug:
-                            check = tr.get('http://www.icanhazip.com/')  # , headers=req_headers)
+                            check = tr.get('http://www.icanhazip.com/')
                             print('outside ip looks like', check.text)
                         response = tr.get(url)
                 else:
                     renew_connection()
                     with get_tor_session() as session:
                         if debug:
-                            check = session.get('http://www.icanhazip.com/')  # , headers=req_headers)
+                            check = session.get('http://www.icanhazip.com/')
                             print('outside ip looks like', check.text)
                         response = session.get(url)
             except (stem.SocketError, stem.connection.AuthenticationFailure):

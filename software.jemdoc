@@ -30,12 +30,14 @@ The following software programs were utilized or developed mostly while at unive
 #- [iwklr.html Importance Weighted Kernel Logistic Regression (IWKLR)] (Classification)
 
 == Some tools
-- [http://www.github.com/nickrose/nickrose.github.io github.io] website with
+- [http://www.github.com/nickrose/nickrose.github.io github.io] website (this site) with
 [http://jemdoc.jaboc.net jemdoc]\n
 create your own website, see the github repo for tools to setup
 a similar site and scrap publications from Google Scholar using a tor service,
 see the [./create_pubs.py +create_pubs.py+] script (it's tricky since GS
 doesn't like people running web scrapers on their site).
+- [https://github.com/nickrose/tsp_algo TSP solver]\n
+a simple module and some jupyter notebooks for playing with simulated Traveling Salesman problems.
 #- [software/kde.zip Multivariate Kernel Density Estimation for dummies (Matlab)]
 - [http://www.lce.hut.fi/research/mm/ekfukf/ EKF/UKF Kalman filtering toolbox]\n
 Matlab filtering toolbox, visualization, and various dynamic models. by Simo Särkkä, and Jouni Hartikainen.
@@ -49,7 +51,6 @@ Disciplined Convex Optimization. By Michael Grant and Stephen Boyd.
 (gitHub) Matlab minimum increment space-time water filing algorithm and test bed. By yours truly.
 
 == Miscellanea
-- [https://github.com/nickrose/tsp_algo TSP solver comparison]
 - [https://drive.google.com/file/d/0BxQq5Bz3hlXXc19LZnZmdzllQXM/view?usp=sharing An Introduction to LaTeX Typesetting]
 - [http://www.phdcomics.com/comics/archive/phd072011s.gif R.I.P.]\n
 - [http://www.phdcomics.com/comics/archive/phd010708s.gif What research looks like]\n
