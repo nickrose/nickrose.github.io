@@ -1,17 +1,47 @@
 #!/usr/bin/env python3
-from bs4 import BeautifulSoup, SoupStrainer
-from urllib.request import urlopen
-import requests
-import warnings
-import numpy as np
-from time import sleep
-from torrequest import TorRequest
-from functools import wraps
-import pickle
-import stem
 import os
 import sys
+import warnings
+from functools import wraps
 import hashlib
+import pickle
+from time import sleep
+import numpy as np
+import requests
+from bs4 import BeautifulSoup, SoupStrainer
+from urllib.request import urlopen
+try:
+    import stem
+except ImportError:
+    stem = None
+try:
+    from torrequest import TorRequest
+except ImportError:
+    TorRequest = None
+
+"""
+SETUP:
+For using this script, which is a tor-service-based web scraping of GS API
+to get a `.jemdoc` formatted list of publications:
+
+- prerequisites
+    - run: `pip install numpy requests bs4 urllib3 stem torrequest`
+    - run: `sudo apt-get tor`, or `brew install tor`
+- find the tor config directory:
+    /etc/tor/torrc or /usr/local/etc/tor/torrc
+- do a copy `cp torrc.sample torrc` wherever it is (see previous)
+    - (might have to use sudo)
+- make sure the following lines are uncommented
+    SOCKSport 9050
+    ControlPort 9051
+    HashControlPassword 16:XXX...XXX
+- run: ./torhasher.py <your tor control password>
+- put the hashed password in the above mentioned HashControlPassword
+  location in the config file
+- start the tor-network daemon with
+  `/etc/init.d start tor` or `brew services start tor`
+- run ./create_pubs.py -t <your google scholar user token>
+"""
 
 # from jemdoc import main as jemdoc_processor
 global DEBUG, PERFORM_API_QUERY
@@ -88,31 +118,32 @@ def sleep_between(wait=1):
 def tor_newip_get(url, pw=tor_pw, debug=0):
     debug = max(debug, DEBUG)
     response = None
-    try:
+    if (stem is not None):
         try:
-            if use_torrequest:
-                with TorRequest(password=pw) as tr:
-                    tr.reset_identity()
-                    if debug:
-                        check = tr.get('http://www.icanhazip.com/')  # , headers=req_headers)
-                        print('outside ip looks like', check.text)
-                    response = tr.get(url)
+            try:
+                if use_torrequest and (TorRequest is not None):
+                    with TorRequest(password=pw) as tr:
+                        tr.reset_identity()
+                        if debug:
+                            check = tr.get('http://www.icanhazip.com/')  # , headers=req_headers)
+                            print('outside ip looks like', check.text)
+                        response = tr.get(url)
+                else:
+                    renew_connection()
+                    with get_tor_session() as session:
+                        if debug:
+                            check = session.get('http://www.icanhazip.com/')  # , headers=req_headers)
+                            print('outside ip looks like', check.text)
+                        response = session.get(url)
+            except (stem.SocketError, stem.connection.AuthenticationFailure):
+                warnings.warn('TOR SERVICE: unable to connect to tor service')
+            except stem.connection.IncorrectPassword:
+                warnings.warn('TOR SERVICE: tor control password incorrect')
+        except OSError as ose:
+            if 'tor' in str(ose):
+                warnings.warn(str(ose))
             else:
-                renew_connection()
-                with get_tor_session() as session:
-                    if debug:
-                        check = session.get('http://www.icanhazip.com/')  # , headers=req_headers)
-                        print('outside ip looks like', check.text)
-                    response = session.get(url)
-        except (stem.SocketError, stem.connection.AuthenticationFailure):
-            warnings.warn('TOR SERVICE: unable to connect to tor service')
-        except stem.connection.IncorrectPassword:
-            warnings.warn('TOR SERVICE: tor control password incorrect')
-    except OSError as ose:
-        if 'tor' in str(ose):
-            warnings.warn(str(ose))
-        else:
-            raise(ose)
+                raise(ose)
     if debug:
         print(response, type(response))
         if debug > 2:
@@ -411,7 +442,12 @@ def create_pub_jemdoc(fileout, userToken=defaultUserToken,
             outfile.write(footer)
         print(f'wrote publication data to: {fileout}')
     else:
-        print('no publication data retrieved')
+        print('no publication data retrieved, file not written')
+
+    # NOTE: i thought about doing this automatically, but i didn't want to
+    # revert to python2.7 for this script, and I also didn't want to rewrite the
+    # jemdoc.pyscript
+
     # run the jemdoc md-to-html-processor
     # jemdoc_processor(['jemdoc.py', 'publication'])
 
@@ -421,6 +457,12 @@ if __name__ == '__main__':
     helptext = """
 Script to query google scholar and scrap author publication data,
 creates a publication jemdoc file for posting to a website
+
+The scraper automatically creates a cache of successful page scrap(ing?)s, so
+that if you need to tweak anything, you can run it more than once, but additional
+GS API requests won't be sent (and therefore the blocking of service to your
+publications page will be less likely to happen, not entirely sure how they do
+this when you request through the TOR network).
     usage: ./create_pub_jemdoc.py
     Options:
     --clear/-c                   | clear the cache, will exit after clearing
@@ -428,8 +470,8 @@ creates a publication jemdoc file for posting to a website
     --file/-f <outfile>          | default is publication.jemdoc
     --debug/-d <debug level>     | default is 0
     --cache/-o                   | use the cache only, no API queries
-    --token/-t <GS user token>   | set the GS user token"""
-
+    --token/-t <GS user token>   | set the GS user token
+"""
     fileout = 'publication.jemdoc'
     token = defaultUserToken
     args = sys.argv

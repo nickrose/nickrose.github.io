@@ -25,10 +25,17 @@ The following software programs were utilized or developed mostly while at unive
 #- [http://www.ism.ac.jp/~liu/software.html Change Point Detection using RuLSIF]
 
 #== Classification
-#- [http://www.ms.k.u-tokyo.ac.jp/software.html\#LSPC Least-Squares Probabilistic Classifier (LSPC)] (Classification)
+#- [http://www.ms.k.u-tokyo.ac.jp/software.html\#LSPC Least-Squares
+#Probabilistic Classifier (LSPC)] (Classification)
 #- [iwklr.html Importance Weighted Kernel Logistic Regression (IWKLR)] (Classification)
 
 == Some tools
+- [http://www.github.com/nickrose/nickrose.github.io github.io] website with
+[http://jemdoc.jaboc.net jemdoc]\n
+create your own website, see the github repo for tools to setup
+a similar site and scrap publications from Google Scholar using a tor service,
+see the [./create_pubs.py +create_pubs.py+] script (it's tricky since GS
+doesn't like people running web scrapers on their site).
 #- [software/kde.zip Multivariate Kernel Density Estimation for dummies (Matlab)]
 - [http://www.lce.hut.fi/research/mm/ekfukf/ EKF/UKF Kalman filtering toolbox]\n
 Matlab filtering toolbox, visualization, and various dynamic models. by Simo Särkkä, and Jouni Hartikainen.
