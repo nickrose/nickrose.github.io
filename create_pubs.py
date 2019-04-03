@@ -254,6 +254,7 @@ def get_souped_data(url,
         parse_only=None,  # ('tr', {'class': search_func})
         torpw=tor_pw,
         local_cache=None,
+        debug=0,
         search_func=SEARCH.make_cond(SEARCH.entry)):
     get_data = None
     if local_cache is not None:
