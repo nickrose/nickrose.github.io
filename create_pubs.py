@@ -37,7 +37,8 @@ to get a `.jemdoc` formatted list of publications:
     HashControlPassword 16:XXX...XXX
 - run: ./torhasher.py <your tor control password>
 - put the hashed password in the above mentioned HashControlPassword
-  location in the config file
+  location in the config file, and the original plain text password 
+  in the variable definition below (line 58).
 - start the tor-network daemon with
   `/etc/init.d start tor` or `brew services start tor`
 - run ./create_pubs.py -t <your google scholar user token>
@@ -448,8 +449,10 @@ def create_pub_jemdoc(fileout, userToken=defaultUserToken,
 
 
 if __name__ == '__main__':
-    helptextshort = 'USAGE: ./create_pub_jemdoc.py [-c, -f <file>, -t <token>, -h]'
+    helptextshort = 'USAGE: ./create_pubs.py [-c, -f <file>, -t <token>, -h]'
     helptext = """
+create_pubs.py
+
 Script to query google scholar and scrap author publication data,
 creates a publication jemdoc file for posting to a website
 
@@ -466,6 +469,10 @@ this when you request through the TOR network).
     --debug/-d <debug level>     | default is 0
     --cache/-o                   | use the cache only, no API queries
     --token/-t <GS user token>   | set the GS user token
+
+NOTE: if you have not already set up a tor service and have it running on your 
+local machine, see the SETUP instructions above and be sure to update the `tor_pw` 
+variable on line 58 of this file.
 """
     fileout = 'publication.jemdoc'
     token = defaultUserToken
