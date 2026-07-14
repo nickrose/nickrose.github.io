@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hugo-academic-cv",
+      "runtimeExecutable": "hugo",
+      "runtimeArgs": ["server", "--disableFastRender", "--source", "hugo-theme-academic-cv"],
+      "port": 1313
+    }
+  ]
+}

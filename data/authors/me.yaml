@@ -1,0 +1,152 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Nick Roseveare
+  given: Nick
+  family: Roseveare
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+postnominals:
+  - PhD
+role: Lead Data Scientist
+bio: |
+  I focus on development and application of statistical signal processing and
+  machine learning algorithms for a variety of applications. In particular, I
+  am interested in the theoretical under-pinnings and hidden behaviors of ML
+  algorithms and what can be understood better about them in terms of
+  classical statistics.
+
+affiliations:
+  - name: RSI
+    url: http://www.rsidelivers.com/
+  - name: Numerica Corp.
+    url: http://www.numerica.us/
+
+links:
+  - icon: hero/phone
+    url: tel:+19705991732
+    label: '+1-970-599-1732'
+  - icon: hero/document-arrow-down
+    url: https://drive.google.com/file/d/1001NqdUPs3xF_W2aTMmRkVF8aMJargCG/view
+    label: Complete résumé
+  - icon: hero/academic-cap
+    url: https://drive.google.com/file/d/14yseuDTDnkbtAM8KydA6Nf0q5byWFmYT/view
+    label: Philosophy of teaching
+  - icon: brands/linkedin
+    url: http://www.linkedin.com/in/nickroseveare
+    label: LinkedIn
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=aBYncN4AAAAJ&view_op=list_works&sortby=pubdate
+    label: Google Scholar
+  - icon: academicons/researchgate
+    url: http://www.researchgate.net/profile/Nicholas_Roseveare
+    label: ResearchGate
+  - icon: brands/github
+    url: https://www.github.com/nickrose
+    label: GitHub
+  - icon: hero/document-text
+    url: https://patents.google.com/?inventor=Nicholas+Roseveare
+    label: Patents
+
+interests:
+  - Statistical Signal Processing
+  - Machine Learning
+  - Optimization
+  - Tracking & Filtering
+  - High-dimensional Model-Order Selection
+
+education:
+  - degree: PhD, Electrical Engineering
+    institution: Kansas State University
+    end: 2013-05-31
+    summary: |
+      Research on optimization of resource-limited decentralized systems with
+      signal-processing joint objectives.
+  - degree: MS, Electrical Engineering
+    institution: Colorado State University
+    end: 2007-05-31
+  - degree: BS, Electrical Engineering
+    institution: Colorado State University
+    end: 2005-05-31
+
+experience:
+  - role: Lead Data Scientist
+    org: RSI
+    start: 2021-11-01
+    summary: |
+      Developing advanced analytics approaches for fraud detection,
+      collections enforcement, and audit selection.
+  - role: Research Scientist
+    org: Numerica Corp.
+    start: 2019-05-01
+    summary: |
+      Designing and improving target-tracking and computational-sensing
+      algorithms, game-theoretic resource allocation and planning, and spatial
+      filtering of intermittent low-dimensional measurements for tracking
+      accuracy and uncertainty quantification; integrating these algorithms
+      into operational systems.
+  - role: Senior Data Scientist
+    org: Formulus Black
+    start: 2018-08-01
+    end: 2019-05-31
+  - role: Signal Processing Consultant
+    org: Spire Global
+    start: 2018-05-01
+    end: 2019-01-31
+    summary: Signal processing for software-defined radios.
+  - role: Senior Data Scientist
+    org: Alchemy IoT
+    start: 2017-02-01
+    end: 2018-08-31
+  - role: Signal Processing Research Engineer
+    org: Innovative Signal Analysis, Inc.
+    start: 2014-11-01
+    end: 2017-01-31
+  - role: Postdoctoral Researcher
+    org: Universität Paderborn
+    start: 2013-09-01
+    end: 2014-09-30
+    summary: |
+      Lectured on signal processing and control theory; researched
+      low-sample-support methods for correlation analysis of high-dimensional
+      data sets.
+  - role: Teaching and Research Assistant
+    org: Kansas State University
+    start: 2009-08-01
+    end: 2013-05-31
+
+skills:
+  - name: Technical Strengths
+    items:
+      - label: Algorithm development
+        description: |
+          Initial prototyping from research papers, progressive improvements
+          and novel approaches, all the way through practical implementation
+          and infrastructure choices (database, message-queues,
+          containerization, etc.).
+      - label: Statistical signal processing
+        description: |
+          Tracking and filtering, time-series smoothing, phase
+          reconstruction, high-dimensional model-order selection, etc.
+      - label: Optimization
+        description: |
+          Convex relaxations of NP-hard problems (TSP, cost assignment,
+          constrained resource allocation, etc.).
+      - label: Machine learning
+        description: |
+          Anomaly detection, natural language processing, and computer
+          vision utilizing ensemble methods, deep learning, and
+          high-dimensional correlation analysis.
+
+awards:
+  - title: Outstanding Teaching Assistant
+    awarder: Kansas State University, Dept. ECE
+    date: '2011'
+  - title: Student Travel Grant
+    awarder: IEEE WCNC
+    date: '2011'
+  - title: Myron Brown Ludlow and Fry Family Scholarships
+    awarder: Colorado State University
+    date: '2005'
