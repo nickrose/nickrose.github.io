@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
-      artifact-id: ${{ steps.upload.outputs.artifact-id }}
+      artifact-id: ${{ steps.upload.outputs.artifact_id }}
     steps:
     - name: Checkout
       uses: actions/checkout@v6
@@ -124,7 +124,7 @@ jobs:
 
     - name: Setup Pages
       id: pages
-      uses: actions/configure-pages@v5
+      uses: actions/configure-pages@v6
 
     - name: Build with Hugo
       env:
@@ -164,6 +164,6 @@ jobs:
 
     - name: Upload artifact
       id: upload
-      uses: actions/upload-pages-artifact@v4
+      uses: actions/upload-pages-artifact@v5
       with:
         path: ./public
