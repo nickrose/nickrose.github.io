@@ -134,6 +134,27 @@ jobs:
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+    - name: Insert Cloudflare Analytics tag into homepage
+      run: |
+        python3 -c "
+        import pathlib
+
+        target = pathlib.Path('public/index.html')
+        tag_file = pathlib.Path('cloudflare_tag.js')
+
+        if not target.exists() or not tag_file.exists():
+            print('::warning::public/index.html or cloudflare_tag.js not found; skipping analytics tag insertion')
+        else:
+            tag = tag_file.read_text(encoding='utf-8').strip()
+            html = target.read_text(encoding='utf-8')
+            if '</body>' in html:
+                html = html.replace('</body>', tag + '</body>', 1)
+                target.write_text(html, encoding='utf-8')
+                print('Inserted Cloudflare Analytics tag before </body> in public/index.html')
+            else:
+                print('::warning::No </body> tag found in public/index.html; tag not inserted')
+        "
+
     - name: Generate Pagefind search index (if applicable)
       run: |
         # Check if site uses Pagefind search
