@@ -8,7 +8,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: Software developed mostly while at university and during postdoctoral research.
+      text: Software developed mostly while at university and during postdoctoral research. Industry research and internal publications are all protected IP.
       filters:
         folders:
           - projects
