@@ -1,5 +1,6 @@
 ---
 title: "Two-channel Model Order Selection"
+outputs: ["html"]
 authors:
 - "me"
 date: "2015-01-01T00:00:00Z"

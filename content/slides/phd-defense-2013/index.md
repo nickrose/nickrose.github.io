@@ -1,5 +1,6 @@
 ---
 title: "Optimization and Resource Management in Wireless Sensor Networks"
+outputs: ["html"]
 authors:
 - "me"
 date: "2013-04-19T00:00:00Z"

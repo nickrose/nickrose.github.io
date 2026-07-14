@@ -1,5 +1,6 @@
 ---
 title: "An Introduction to LaTeX Typesetting"
+outputs: ["html"]
 authors:
 - "me"
 date: "2010-01-01T00:00:00Z"
