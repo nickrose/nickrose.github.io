@@ -6,7 +6,7 @@ env:
 on:
   # Standalone trigger for PR validation
   pull_request:
-    branches: ['main']
+    branches: ['master', 'main']
   # Reusable workflow trigger - called by deploy.yml
   workflow_call:
     outputs:
@@ -27,7 +27,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.repository_owner != 'HugoBlox'
+    if: github.repository_owner == 'nickrose' && github.repository == 'nickrose.github.io'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
