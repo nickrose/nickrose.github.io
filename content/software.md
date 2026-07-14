@@ -51,7 +51,7 @@ sections:
 
         ## Miscellanea
 
-        - [An Introduction to LaTeX Typesetting](https://drive.google.com/file/d/0BxQq5Bz3hlXXc19LZnZmdzllQXM/view?usp=sharing)
+        - [An Introduction to LaTeX Typesetting](/slides/intro-to-latex/)
         - [R.I.P.](http://www.phdcomics.com/comics/archive/phd072011s.gif)
         - [What research looks like](http://www.phdcomics.com/comics/archive/phd010708s.gif)
         - [Research interests](http://www.phdcomics.com/comics/archive/phd012108s.gif)

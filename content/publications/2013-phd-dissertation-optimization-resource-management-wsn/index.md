@@ -11,6 +11,8 @@ publication:
 links:
   - type: pdf
     url: "http://krex.k-state.edu/dspace/bitstream/handle/2097/15730/NicholasRoseveare2013.pdf?sequence=1"
+
+slides: "phd-defense-2013"
 ---
 
 See the entry on [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=aBYncN4AAAAJ&sortby=pubdate&citation_for_view=aBYncN4AAAAJ:W7OEmFMy1HYC).
