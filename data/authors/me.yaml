@@ -21,8 +21,9 @@ bio: |
 affiliations:
   - name: RSI
     url: http://www.rsidelivers.com/
-  - name: Numerica Corp.
-    url: http://www.numerica.us/
+  - name: Colorado Mountain College
+    url: https://coloradomtn.edu/
+
 
 links:
   - icon: hero/phone
@@ -59,58 +60,95 @@ interests:
 
 education:
   - degree: PhD, Electrical Engineering
-    institution: Kansas State University
+    institution: Kansas State University 
+    url: https://www.k-state.edu/
     end: 2013-05-31
     summary: |
       Research on optimization of resource-limited decentralized systems with
       signal-processing joint objectives.
   - degree: MS, Electrical Engineering
     institution: Colorado State University
+    url: https://www.colostate.edu/
     end: 2007-05-31
   - degree: BS, Electrical Engineering
     institution: Colorado State University
+    url: https://www.colostate.edu/
     end: 2005-05-31
 
 experience:
   - role: Lead Data Scientist
-    org: RSI
+    org: RSI [site](http://www.rsidelivers.com/)
     start: 2021-11-01
     summary: |
       Developing advanced analytics approaches for fraud detection,
       collections enforcement, and audit selection.
   - role: Adjunct Professor
-    org: Colorado Mountain College
+    org: Colorado Mountain College [site](https://coloradomtn.edu/)
     start: 2025-08-25
     summary: |
       Working with students to master introductory college mathematics concepts. 
       Preparing and lecturing college-level mathematics courses, including algebra and calculus.
   - role: Research Scientist
-    org: Numerica Corp. (now Anduril Industries)
+    org: Numerica Corporation (now [Anduril Industries](https://www.anduril.com/))
     start: 2019-05-01
     end: 2021-10-31
     summary: |
-      Designing and improving target-tracking and computational-sensing
-      algorithms, game-theoretic resource allocation and guidance planning, and spatial
-      filtering of intermittent low-dimensional measurements for tracking
-      accuracy and uncertainty quantification; integrating these algorithms
-      into operational systems.
+      Designing, developing, and improving mathematical models and practical 
+      implementations of target-tracking and computational-sensing
+      algorithms (with the result that the required SNR for detection was halved), 
+      game-theoretic resource allocation and guidance planning (dynamic and 
+      adversarial assumptions), and spatial filtering of intermittent low-dimensional 
+      measurements for tracking accuracy and uncertainty quantification; also responsible 
+      for integrating these algorithms into operational and benchmark systems.
   - role: Senior Data Scientist
     org: Formulus Black
     start: 2018-08-01
     end: 2019-05-31
+    summary: |
+      Developed novel algorithmic improvements to hashing, deduplication, load balancing, 
+      and VM migration systems. Achieved 300% efficiency gains in data reduction algorithms 
+      and optimized hash table performance in C for faster retrieval and reduced CPU contention. 
+      Applied machine learning techniques for predictive caching and streaming compression, 
+      while devising a convex relaxation to solve the NP-hard VM-to-resource assignment problem. 
+      Prototyped and tested all solutions using Python with numpy, scipy, scikit-learn, and 
+      related libraries.
   - role: Signal Processing Consultant
     org: Spire Global
     start: 2018-05-01
     end: 2019-01-31
-    summary: Signal processing for software-defined radios.
+    summary: |
+      Signal processing for software-defined radios. Developed methods for
+      TDOA estimation and tracking of emmitters from multiple local receivers.
   - role: Senior Data Scientist
     org: Alchemy IoT
     start: 2017-02-01
     end: 2018-08-31
+    summary: |
+      Developed and implemented algorithms for anomaly detection, predictive
+      maintenance, and sensor fusion for industrial IoT applications.
+      Led analytics research and development and defined new analytics products,
+      including time-series anomaly detection, pattern identification, real-time
+      data cleaning, device performance optimization, and infrastructure cost
+      estimation tools. 
+      • Directed Python prototyping and algorithm integration within AWS/Docker, MongoDB, MQTT, and backend APIs. 
+      • Delivered predictive models with a 0.4% false-alarm rate on noisy, inconsistent data from 100k devices with 70 sensors. 
+      • Developed algorithmic improvements using numpy, scipy, and scikit-learn.
+      • Granted patents related to the developed algorithms (see (here)[https://patents.google.com/?inventor=Nicholas+Roseveare]).
   - role: Signal Processing Research Engineer
     org: Innovative Signal Analysis, Inc.
     start: 2014-11-01
     end: 2017-01-31
+    summary: |
+      Research and development of radar signal processing algorithms for
+      operational systems, with a focus on practical implementation and reliable
+      detection performance.
+      • In first month of employment, found critical bugs related to underlying statistical 
+        assumptions and behavior in the real-time signal-detector/characterizer and, for a 
+        particular input parameter setting, reduced the number of false-alarms by two orders of magnitude.
+      • Designed and implemented (in C) a) solutions to detect and characterize radar pulse-compression
+        codes (result: 50% reduction in missed-detections); b) Hough transform-based detection of
+        overlapping chirp signals; c) robust statistical smoothing and outlier removal in C++, and
+        supported integration into operational systems.
   - role: Postdoctoral Researcher
     org: Universität Paderborn
     start: 2013-09-01
