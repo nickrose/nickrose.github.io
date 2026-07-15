@@ -16,7 +16,9 @@ bio: |
   machine learning algorithms for a variety of applications. In particular, I
   am interested in the theoretical under-pinnings and hidden behaviors of ML
   algorithms and what can be understood better about them in terms of
-  classical statistics.
+  classical statistics. I also love problem solving and working on challenging
+  practical problems, whether it is algorithm development or developing applications 
+  that are useful for the customer.
 
 affiliations:
   - name: RSI
@@ -61,35 +63,58 @@ interests:
 education:
   - degree: PhD, Electrical Engineering
     institution: Kansas State University 
-    url: https://www.k-state.edu/
     end: 2013-05-31
+    button:
+      text: University website
+      url: http://www.ksu.edu/
     summary: |
       Research on optimization of resource-limited decentralized systems with
       signal-processing joint objectives.
   - degree: MS, Electrical Engineering
     institution: Colorado State University
-    url: https://www.colostate.edu/
     end: 2007-05-31
+    button:
+      text: University website
+      url: https://www.colostate.edu/
   - degree: BS, Electrical Engineering
     institution: Colorado State University
-    url: https://www.colostate.edu/
     end: 2005-05-31
+    button:
+      text: University website
+      url: https://www.colostate.edu/
 
 experience:
   - role: Lead Data Scientist
-    org: RSI [site](http://www.rsidelivers.com/)
+    org: RSI 
+    url: http://www.rsidelivers.com/
+    button:
+      text: Company website
+      url: http://www.rsidelivers.com/
     start: 2021-11-01
     summary: |
-      Developing advanced analytics approaches for fraud detection,
-      collections enforcement, and audit selection.
+      Developing advanced analytics approaches for fraud detection, collections enforcement,
+      and audit selection. I create insights from customer data to improve compliance and
+      workflow efficiency, deploy and monitor multiple mixed data-type models for fraud scoring
+      with accuracy above 93% for UI claims, and retuned an existing fraud model to achieve
+      98% accuracy with an AUC of 0.99 for tax returns. I also formulated a unique
+      semi-supervised audit selection model that achieved 94% accuracy, and my areas of
+      practice include NLP (embeddings, LLMs, and RAG chatbots), recommendation engines, supervised
+      data ETL (cleaning, feature engineering, and model tuning), and unsupervised approaches
+      such as clustering and anomaly detection.
   - role: Adjunct Professor
-    org: Colorado Mountain College [site](https://coloradomtn.edu/)
+    org: Colorado Mountain College
+    button: 
+      text: College website
+      url: https://coloradomtn.edu/
     start: 2025-08-25
     summary: |
       Working with students to master introductory college mathematics concepts. 
       Preparing and lecturing college-level mathematics courses, including algebra and calculus.
   - role: Research Scientist
-    org: Numerica Corporation (now [Anduril Industries](https://www.anduril.com/))
+    org: Numerica Corporation (now Anduril Industries)
+    button: 
+      text: Company website
+      url: https://www.anduril.com/
     start: 2019-05-01
     end: 2021-10-31
     summary: |
@@ -114,6 +139,7 @@ experience:
       related libraries.
   - role: Signal Processing Consultant
     org: Spire Global
+    url: https://spire.com/
     start: 2018-05-01
     end: 2019-01-31
     summary: |
@@ -131,9 +157,12 @@ experience:
       data cleaning, device performance optimization, and infrastructure cost
       estimation tools. 
       • Directed Python prototyping and algorithm integration within AWS/Docker, MongoDB, MQTT, and backend APIs. 
-      • Delivered predictive models with a 0.4% false-alarm rate on noisy, inconsistent data from 100k devices with 70 sensors. 
+      • Delivered predictive models with a 0.4% false-alarm rate (AUC of 0.92) on noisy, inconsistent data from 100k devices with 70 sensors. 
       • Developed algorithmic improvements using numpy, scipy, and scikit-learn.
-      • Granted patents related to the developed algorithms (see (here)[https://patents.google.com/?inventor=Nicholas+Roseveare]).
+      • Granted patents related to the developed algorithms 
+    button:
+      text: Patents
+      url: https://patents.google.com/?inventor=Nicholas+Roseveare
   - role: Signal Processing Research Engineer
     org: Innovative Signal Analysis, Inc.
     start: 2014-11-01
@@ -149,6 +178,10 @@ experience:
         codes (result: 50% reduction in missed-detections); b) Hough transform-based detection of
         overlapping chirp signals; c) robust statistical smoothing and outlier removal in C++, and
         supported integration into operational systems.
+    button:
+      text: Company website
+      url: https://www.signal-analysis.com/
+
   - role: Postdoctoral Researcher
     org: Universität Paderborn
     start: 2013-09-01
@@ -189,9 +222,9 @@ awards:
   - title: Outstanding Teaching Assistant
     awarder: Kansas State University, Dept. ECE
     date: '2011'
-  - title: Student Travel Grant
-    awarder: IEEE WCNC
-    date: '2011'
-  - title: Myron Brown Ludlow and Fry Family Scholarships
+  # - title: Student Travel Grant
+  #   awarder: IEEE WCNC
+  #   date: '2011'
+  - title: Myron Brown Ludlow (full ride) and Fry Family Scholarships
     awarder: Colorado State University
-    date: '2005'
+    date: '2003, 2004'

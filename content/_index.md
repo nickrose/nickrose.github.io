@@ -69,7 +69,7 @@ sections:
 
   - block: markdown
     content:
-      title: 'Interests and Philosophy of Research'
+      title: 'Approach and Philosophy of Research'
       text: |-
         I am always attempting to abide by the following life (and career)
         principles:
@@ -130,7 +130,7 @@ sections:
         - Reviewer, IEEE Trans. Wireless Communications, IEEE Trans.
           Vehicular Technology, Aerospace and Electronic Systems, et al.
         - Tau Beta Pi and Eta Kappa Nu Honor Societies
-        - [Google Patents record](https://patents.google.com/?inventor=Nicholas+Roseveare)
+        - [Google Patents](https://patents.google.com/?inventor=Nicholas+Roseveare)
     design:
       columns: '1'
 
