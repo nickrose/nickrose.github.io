@@ -87,6 +87,7 @@ experience:
   - role: Research Scientist
     org: Numerica Corp. (now Anduril Industries)
     start: 2019-05-01
+    end: 2021-10-31
     summary: |
       Designing and improving target-tracking and computational-sensing
       algorithms, game-theoretic resource allocation and guidance planning, and spatial
