@@ -19,6 +19,9 @@ main:
   - name: Slides
     url: slides/
     weight: 60
+  - name: Media
+    url: media/
+    weight: 70
   - name: Software & Misc
     url: software/
-    weight: 50
+    weight: 80

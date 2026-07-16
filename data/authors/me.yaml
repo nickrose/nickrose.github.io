@@ -159,7 +159,7 @@ experience:
       • Directed Python prototyping and algorithm integration within AWS/Docker, MongoDB, MQTT, and backend APIs. 
       • Delivered predictive models with a 0.4% false-alarm rate (AUC of 0.92) on noisy, inconsistent data from 100k devices with 70 sensors. 
       • Developed algorithmic improvements using numpy, scipy, and scikit-learn.
-      • Granted patents related to the developed algorithms 
+      • Granted patents related to the developed algorithms.
     button:
       text: Patents
       url: https://patents.google.com/?inventor=Nicholas+Roseveare
