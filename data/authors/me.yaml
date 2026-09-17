@@ -12,10 +12,13 @@ postnominals:
   - PhD
 role: Lead Data Scientist
 bio: |
-  I focus on development and application of statistical signal processing and
-  machine learning algorithms for a variety of applications. In particular, I
-  am interested in the theoretical under-pinnings and hidden behaviors of ML
-  algorithms and what can be understood better about them in terms of
+  I have worked on development and application of statistical signal processing and
+  machine learning algorithms for a variety of applications. I have worked on tracking 
+  and filtering, TDOA estiamtion, and guidance algorithms related orbital craft, 
+  self-propelled systems, and unmanned/autonomous vehicles (UAS, etc.). I have developed 
+  link budget models for satellite communications and radar signal degradation analysis. I am 
+  interested in the theoretical under-pinnings of tracking algorithms and 
+  hidden behaviors of ML algorithms and what can be understood better about them in terms of
   classical statistics. I also love problem solving and working on challenging
   practical problems, whether it is algorithm development or developing applications 
   that are useful for the customer.
